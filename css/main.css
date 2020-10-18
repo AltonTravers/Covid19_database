@@ -64,7 +64,8 @@ body {
           padding: 0.5rem;
           display: flex;
           align-items: center;
-          justify-content: center; }
+          justify-content: center;
+          text-align: center; }
           .container .search-result.grid .grid-card .header.grid h3:nth-child(n + 2) {
             border-left: 1px solid #f2f2f2; }
       .container .search-result.grid .grid-card .body.grid {
