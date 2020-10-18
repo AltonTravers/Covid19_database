@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: skyblue;
+  color: #fff; }
+
+.flex-col {
+  display: flex;
+  flex-direction: column; }
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr; }
+
+.container {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 4rem 1rem; }
+  .container .title {
+    font-size: 2.5rem; }
+  .container .search {
+    margin: 2rem 0;
+    width: 100%; }
+    .container .search input {
+      width: inherit;
+      padding: 0.8rem 1.5rem;
+      font-size: 1.2rem;
+      outline: none;
+      border: none; }
+  .container .global-data {
+    background: #fff;
+    color: #666;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0; }
+    .container .global-data .flex-row {
+      margin: 0 1.5rem; }
+      .container .global-data .flex-row:nth-child(n + 2) {
+        border-top: 1px dotted #989898; }
+    .container .global-data .flex-row h3 {
+      padding: 0.4rem 0rem; }
+  .container .search-result.grid {
+    grid-gap: 1rem; }
+    .container .search-result.grid .grid-card {
+      background-color: #cccccc;
+      width: 100%; }
+      .container .search-result.grid .grid-card .header.grid {
+        justify-content: space-evenly;
+        grid-template-columns: 0.7fr 1fr 0.8fr 1fr 1fr 0.9fr 1fr;
+        grid-gap: 0rem;
+        width: 100%; }
+        .container .search-result.grid .grid-card .header.grid h3 {
+          padding: 0.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .container .search-result.grid .grid-card .header.grid h3:nth-child(n + 2) {
+            border-left: 1px solid #f2f2f2; }
+      .container .search-result.grid .grid-card .body.grid {
+        width: 100%;
+        justify-content: space-evenly;
+        grid-template-columns: 0.7fr 1fr 0.8fr 1fr 1fr 0.9fr 1fr;
+        grid-gap: 0rem;
+        background-color: #fff;
+        color: #666; }
+        .container .search-result.grid .grid-card .body.grid h3 {
+          padding: 0.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center; }
